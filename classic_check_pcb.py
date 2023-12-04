@@ -3,14 +3,14 @@ import matplotlib.pyplot as plt
 import os
 
 # Ler a imagem do PCB de referência
-imagem_referencia = cv2.imread('/content/Bare-PCB-dataset/Template-PCB-images/01.JPG')
+imagem_referencia = cv2.imread('SUA_IMAGEM_DE_REFERÊNCIA_AQUI')
 
 # Exibir a imagem original do PCB de referência
 plt.figure(figsize=(10,6))
 plt.imshow(imagem_referencia, cmap="gray")
 
 # Ler a imagem do PCB de referência em escala de cinza
-imagem_referencia_cinza = cv2.imread('/content/Bare-PCB-dataset/Template-PCB-images/01.JPG', 0)
+imagem_referencia_cinza = cv2.imread('SUA_IMAGEM_DE_REFERÊNCIA_AQUI', 0)
 
 # Exibir a imagem do PCB de referência em escala de cinza
 plt.figure(figsize=(10,6))
@@ -40,14 +40,14 @@ plt.figure(figsize=(10,6))
 plt.imshow(limiar_adaptativo_referencia, cmap="gray")
 
 # Ler a imagem do PCB de teste
-imagem_teste = cv2.imread('/content/Bare-PCB-dataset/Defective-PCB-images/Missing_hole/Missing_hole_01/01_missing_hole_13.jpg')
+imagem_teste = cv2.imread('/SUA_IMAGEM_DE_TESTE_AQUI')
 
 # Exibir a imagem original do PCB de teste
 plt.figure(figsize=(10,6))
 plt.imshow(imagem_teste, cmap="gray")
 
 # Ler a imagem do PCB de teste em escala de cinza
-imagem_teste_cinza = cv2.imread('/content/Bare-PCB-dataset/Defective-PCB-images/Missing_hole/Missing_hole_01/01_missing_hole_13.jpg', 0)
+imagem_teste_cinza = cv2.imread('SUA_IMAGEM_DE_TESTE_AQUI', 0)
 
 # Redimensionar a imagem do PCB de teste
 imagem_teste_redimensionada = cv2.resize(imagem_teste_cinza, (750, 450))
